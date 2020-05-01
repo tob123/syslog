@@ -5,9 +5,10 @@ services:
     build: ./
     user: root
     environment:
-      - ENABLE_LOGLOCAL="on"
-      - ENABLE_TOKAFKA="off"
-      - ENABLE_REMOTE_SYSLOG="on"
+      - ENABLE_LOGLOCAL=on
+      - ENABLE_TOKAFKA=off
+      - ENABLE_REMOTE_SYSLOG=on
+      - SYSLOG_PORT=514
   syslog-producer:
     image: tob123/rsyslog
     build: ./

@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM ubuntu:focal
 COPY files /
 #environment variables to set befor rsyslog config validation is executed
 ENV ENABLE_TOKAFKA="on" ENABLE_STATISTICS="on" ENABLE_LOGLOCAL="off" ENABLE_LOGFILES="on" SYSLOG_PORT="5140" ENABLE_REMOTE_SYSLOG="off"
